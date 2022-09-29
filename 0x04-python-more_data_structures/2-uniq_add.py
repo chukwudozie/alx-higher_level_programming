@@ -1,12 +1,9 @@
 #!/usr/bin/python3
 
 def uniq_add(my_list=[]):
-	"""
-	Args:
-		my_list: given list
-	Returns:
-		int: sum
-	"""
-	x = list(set(my_list))
-	return sum(x)
-
+    """
+    sum all unique integers in a list (only once for each integer
+    """
+    if my_list is None:
+        return None
+    return sum(set(my_list))
